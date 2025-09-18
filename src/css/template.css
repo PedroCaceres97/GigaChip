@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#menu_bar {
+    width: 100%;
+    height: 8%;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+    background-color: gold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_links {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+}
+
+#menu_contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.menu_link {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    
+    margin: 0 1em;
+    display: flex;
+    align-items: center; /* para centrar verticalmente */
+}
+
+.menu_icon {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.menu_contact {
+    color: black;
+    font-size: 1.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center; /* para centrar verticalmente */
+}
+
+.menu_divider {
+    color: black;
+    font-size: 2em;
+    display: flex;
+    align-items: center; /* para centrar verticalmente */
+}
+
