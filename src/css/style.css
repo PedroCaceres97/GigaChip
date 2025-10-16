@@ -1,18 +1,7 @@
-/*
-:root {
-    --main-accent-color: #747b7d;
-    --main-background-color: #121317;
-    --menu-background-color: #1794ff;
-    
-    --menu-text-color: var(--main-background-color);
-    --menu-hover_text-color: #747b7d;
-}
-*/
-
 :root {
     --main-accent-color: #747b7d;
     --main-background-color: black;
-    --menu-background-color: #121317;;
+    --menu-background-color: #121317;
     
     --menu-text-color: #1794ff;
     --menu-hover_text-color: #747b7d;
@@ -56,7 +45,7 @@ body {
     margin-top: -0.9em;
 }
 
-.menu_link {
+.menu_text {
     color: var(--menu-text-color);
     font-size: 1.3em;
     font-family: "Roboto Mono", monospace;
@@ -65,9 +54,17 @@ body {
     font-style: normal;
     text-decoration: none;
 
-    margin: 0 1em;
     display: flex;
     align-items: center; /* para centrar verticalmente */
+}
+
+.menu_link {
+    margin: 0 1em;
+}
+
+.menu_contact {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .menu_icon {
@@ -78,59 +75,6 @@ body {
     vertical-align: middle;
 }
 
-.menu_contact {
-    color: var(--menu-text-color);
-    font-size: 1.2em;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-
-    margin-left: 1em;
-    margin-right: 1em;
-    display: flex;
-    align-items: center; /* para centrar verticalmente */
-}
-
-.contact_link {
-    color: var(--menu-text-color);
-    font-style: normal;
-    text-decoration: none;
-}
-
-a {
-    position: relative;
-}
-
-a::after, a::before {
-    content: "";
-    height: 0.15em;
-    width: 0%;
-
-    background-color: var(--menu-text-color);
-    border-radius: 30%;
-    position: absolute;
-    transition: 500ms;
-}
-
-a::after {
-    bottom: 0;
-    left: 0;
-}
-
-a::before {
-    top: 0;
-    right: 0;
-}
-
-a:hover::after, a:hover::before {
-    width: 100%;
-}
-
-a:hover {
-    color: var(--main-accent-color);
-}
-
 .menu_divider {
     color: var(--menu-text-color);
     font-size: 2em;
@@ -138,3 +82,8 @@ a:hover {
     align-items: center; /* para centrar verticalmente */
 }
 
+#main_image {
+    height: 41.5vw;
+    position: relative;
+    float: right;
+}

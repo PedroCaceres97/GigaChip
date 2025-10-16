@@ -1,0 +1,19 @@
+.menu_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: var(--menu-background-color);
+}
+
+.menu_dropdown:hover .menu_dropdown_content {
+    display: block;
+}
+
+.menu_dropdown_content a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

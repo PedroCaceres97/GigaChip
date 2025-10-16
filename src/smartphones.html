@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giga Chip - Smartphones</title>
-    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -12,30 +14,38 @@
 <body>
     
     <div id="menu_bar">
+
         <div id="menu_links">
-            <a class="menu_link" href="index.html">Inicio</a>
-            <a class="menu_link" href="peripherals.html">Perifericos</a>
-            <a class="menu_link" href="smartphones.html">Celulares</a>
-            <a class="menu_link" href="cases.html">Fundas</a>
-            <a class="menu_link" href="services.html">Servicios</a>
+
+            <a class="menu_text menu_link" href="index.html">Inicio</a>
+            <a class="menu_text menu_link" href="services.html">Servicios</a>
+
+            <div class="menu_dropdown">
+
+                <p class="menu_text menu_link menu_dropbtn">Productos</p>
+
+                <div class="menu_dropdown_content">
+                    <a class="menu_text menu_link" href="peripherals.html">Perifericos</a>
+                    <a class="menu_text menu_link" href="smartphones.html">Celulares</a>
+                    <a class="menu_text menu_link" href="cases.html">Fundas</a>
+                </div>
+
+            </div>
+
         </div>
 
         <div id="menu_empty"></div>
 
         <div id="menu_contacts">
-            <p class="menu_contact">
-                <a class="contact_link" href="https://wa.me/phone_number" target="_blank"> 
-                    <img class="menu_icon" src="img/whatsapp-icon.png" alt="Whatsapp"> 341-1234-567 
-                </a>
-            </p>
+            <a class="menu_text menu_contact" href="https://wa.me/phone_number" target="_blank"> 
+                <img class="menu_icon" src="img/whatsapp-icon.png" alt="Whatsapp"> 341-1234-567 
+            </a>
             <p class="menu_divider"> 
                 <b>/</b> 
             </p>
-            <p class="menu_contact">
-                <a class="contact_link" href="https://mail.google.com/mail/?view=cm&fs=1&to=gigachip@gmail.com&su=Insert%20Subject" target="_blank">
-                    <img class="menu_icon" src="img/email-icon.png" alt="Email"> gigachip@gmail.com
-                </a>
-            </p>
+            <a class="menu_text menu_contact" href="https://mail.google.com/mail/?view=cm&fs=1&to=gigachip@gmail.com&su=Insert%20Subject" target="_blank">
+                <img class="menu_icon" src="img/email-icon.png" alt="Email"> gigachip@gmail.com
+            </a>
         </div>
 
     </div>

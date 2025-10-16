@@ -1,0 +1,14 @@
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: -10;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+#main_image {
+    animation: 1.5s fadeInRight;
+}
