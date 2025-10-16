@@ -1,16 +1,40 @@
+/*
+:root {
+    --main-accent-color: #747b7d;
+    --main-background-color: #121317;
+    --menu-background-color: #1794ff;
+    
+    --menu-text-color: var(--main-background-color);
+    --menu-hover_text-color: #747b7d;
+}
+*/
+
+:root {
+    --main-accent-color: #747b7d;
+    --main-background-color: black;
+    --menu-background-color: #121317;;
+    
+    --menu-text-color: #1794ff;
+    --menu-hover_text-color: #747b7d;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    background-color: black;
+    background-color: var(--main-background-color);
     margin: 0;
     padding: 0;
 }
 
 #menu_bar {
     width: 100%;
-    height: 8%;
+    height: 5.1em;
     margin: 0;
     padding: 0;
     gap: 1em;
-    background-color: gold;
+    background: linear-gradient(var(--menu-background-color) 70%, var(--main-background-color)) 100%;
 
     display: flex;
     justify-content: space-between;
@@ -20,21 +44,27 @@ body {
 #menu_links {
     display: flex;
     align-items: center;
-    margin-left: 3em;
+    margin-left: 1em;
+    margin-top: -1em;
 }
 
 #menu_contacts {
+    height: 4em;
     display: flex;
     align-items: center;
-    margin-right: 2em;
+    margin-right: 0.5em;
+    margin-top: -0.9em;
 }
 
 .menu_link {
-    color: black;
-    font-size: 1.5em;
+    color: var(--menu-text-color);
+    font-size: 1.3em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
     text-decoration: none;
-    
+
     margin: 0 1em;
     display: flex;
     align-items: center; /* para centrar verticalmente */
@@ -43,21 +73,66 @@ body {
 .menu_icon {
     width: 2em;
     height: 2em;
+    padding-right: 0.3em;
     object-fit: contain;
     vertical-align: middle;
 }
 
 .menu_contact {
-    color: black;
+    color: var(--menu-text-color);
     font-size: 1.2em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
     margin-left: 1em;
     margin-right: 1em;
     display: flex;
     align-items: center; /* para centrar verticalmente */
 }
 
+.contact_link {
+    color: var(--menu-text-color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    position: relative;
+}
+
+a::after, a::before {
+    content: "";
+    height: 0.15em;
+    width: 0%;
+
+    background-color: var(--menu-text-color);
+    border-radius: 30%;
+    position: absolute;
+    transition: 500ms;
+}
+
+a::after {
+    bottom: 0;
+    left: 0;
+}
+
+a::before {
+    top: 0;
+    right: 0;
+}
+
+a:hover::after, a:hover::before {
+    width: 100%;
+}
+
+a:hover {
+    color: var(--main-accent-color);
+}
+
 .menu_divider {
-    color: black;
+    color: var(--menu-text-color);
     font-size: 2em;
     display: flex;
     align-items: center; /* para centrar verticalmente */
