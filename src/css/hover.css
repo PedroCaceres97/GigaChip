@@ -7,7 +7,7 @@
     height: 0.15em;
     width: 0%;
 
-    background-color: var(--menu-text-color);
+    background-color: var(--secondary-color);
     border-radius: 30%;
     position: absolute;
     transition: 500ms;
@@ -28,5 +28,5 @@
 }
 
 .menu_text:hover {
-    color: var(--main-accent-color);
+    color: var(--accent-color);
 }

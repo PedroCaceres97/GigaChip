@@ -1,19 +1,21 @@
-.menu_dropdown {
+#menu_dropdown {
     position: relative;
     display: inline-block;
 }
 
-.menu_dropdown_content {
+#menu_dropdown_content {
     display: none;
     position: absolute;
-    background-color: var(--menu-background-color);
+    background-color: var(--terciary-color);
+
+    z-index: 1;
+
+    box-shadow: 0em 0em 1em 0.5em indigo;
+    border-radius: 0.5em;
 }
 
-.menu_dropdown:hover .menu_dropdown_content {
+#menu_dropdown_content .menu_text {
     display: block;
-}
-
-.menu_dropdown_content a {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    margin: 0em;
+    padding: 0.5em 0.5em;
 }
