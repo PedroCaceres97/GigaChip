@@ -26,6 +26,14 @@
   }
 }
 
+main section p, main section h1 {
+  animation: 3s ease-in-out fadeInStatic;
+}
+
+main img {
+  animation: 1.5s fadeInRight;
+}
+
 #presentation_image {
   animation: 1.5s fadeInRight;
 }
@@ -37,4 +45,5 @@
 #menu_dropdown:hover #menu_dropdown_content {
   display: block;
   animation: fadeInDown 0.3s ease-in-out;
+  margin-top: -0.8em;
 }

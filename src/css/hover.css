@@ -1,8 +1,8 @@
-.menu_text {
+.hover_text {
     position: relative;
 }
 
-.menu_text::after, .menu_text::before {
+.hover_text::after, .hover_text::before {
     content: "";
     height: 0.15em;
     width: 0%;
@@ -10,23 +10,23 @@
     background-color: var(--secondary-color);
     border-radius: 30%;
     position: absolute;
-    transition: 500ms;
+    transition: 300ms;
 }
 
-.menu_text::after {
+.hover_text::after {
     bottom: 0;
     left: 0;
 }
 
-.menu_text::before {
+.hover_text::before {
     top: 0;
     right: 0;
 }
 
-.menu_text:hover::after, .menu_text:hover::before {
+.hover_text:hover::after, .hover_text:hover::before {
     width: 100%;
 }
 
-.menu_text:hover {
+.hover_text:hover {
     color: var(--accent-color);
 }

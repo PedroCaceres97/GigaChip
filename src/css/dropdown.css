@@ -14,7 +14,7 @@
     border-radius: 0.5em;
 }
 
-#menu_dropdown_content .menu_text {
+#menu_dropdown_content a {
     display: block;
     margin: 0em;
     padding: 0.5em 0.5em;

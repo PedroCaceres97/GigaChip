@@ -1,22 +1,4 @@
-:root {
-    --primary-color: black;
-    --secondary-color: #1794ff;
-    --terciary-color: #121317;
-    --accent-color: #747b7d;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(var(--terciary-color) 10%, var(--primary-color) 80%);
-}
+/*
 
 #menu_bar {
     width: 100%;
@@ -44,27 +26,6 @@ body {
     margin-right: 0.5em;
 }
 
-.menu_text {
-    color: var(--secondary-color);
-    font-size: 1.3em;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: none;
-
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.menu_icon {
-    width: 2em;
-    height: 2em;
-    padding-right: 0.3em;
-    object-fit: contain;
-    vertical-align: middle;
-}
-
 #presentation {
     width: 100vw;
     height: 90vh;
@@ -75,11 +36,25 @@ body {
     align-items: center;
 }
 
+#presentation_text {
+    color: var(--secondary-color);
+    font-size: clamp(18px, 1.5vw, 21px);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
 
-#presentation_image {
-    height: 90vh;
-    position: relative;
-    float: right;
+    padding: 0 2vw;
+}
+
+*/
+
+:root {
+    --primary-color: black;
+    --secondary-color: #1794ff;
+    --terciary-color: #121317;
+    --accent-color: #747b7d;
 }
 
 h1 {
@@ -92,14 +67,157 @@ h1 {
     text-decoration: none; 
 }
 
-#presentation_text {
+a, p {
     color: var(--secondary-color);
-    font-size: 1.3em;
+    font-size: clamp(18px, 1.8vw, 24px);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
+}
 
-    padding: 0 2vw;
+.menu_icon {
+    width: 2em;
+    height: 2em;
+    padding-right: 0.3em;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+body {
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(var(--terciary-color) 10%, var(--primary-color) 80%);
+}
+
+header {
+    width: 100vw;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--terciary-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+address {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+main section p {
+    color: var(--secondary-color);
+    font-size: clamp(18px, 1.5vw, 21px);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer {
+    width: 100vw;
+    background-color: var(--terciary-color);
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1025px) {
+    
+    a, p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    main section {
+        order: 1;
+    }
+
+    main section p {
+        margin: 0;
+        padding: 0 2vw;
+    }
+
+    main img {
+        height: 90vh;
+        position: relative;
+        float: right;
+        order: 2;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 6vh;
+    }
+
+    header nav {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+    }
+    
+    #menu_dropdown:hover #menu_dropdown_content {
+        margin-left: -3.5vw;
+    }
+
+    address {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main section {
+        order: 2;
+    }
+
+    main section h1 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    main img {
+        width: 100vw;
+        height: auto;
+        order: 1;
+    }
 }
