@@ -60,7 +60,7 @@
 h1 {
     color: var(--secondary-color);
     margin: 3% 0;
-    font-size: 3em;
+    font-size: 3rem;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -70,7 +70,7 @@ h1 {
 
 a, p {
     color: var(--secondary-color);
-    font-size: clamp(18px, 1.8vw, 24px);
+    font-size: 1.5rem;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -79,15 +79,19 @@ a, p {
 }
 
 .menu_icon {
-    width: 2em;
-    height: 2em;
-    padding-right: 0.3em;
+    width: 3rem;
+    height: 3rem;
     object-fit: contain;
     vertical-align: middle;
 }
 
+html {
+    background-color: var(--terciary-color);
+}
+
 body {
     width: 100vw;
+    height: fit-content;
 
     margin: 0;
     padding: 0;
@@ -124,7 +128,7 @@ main {
 
 main section p {
     color: var(--secondary-color);
-    font-size: clamp(18px, 1.5vw, 21px);
+    font-size: 1.25rem;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -144,8 +148,8 @@ footer {
 @media screen and (min-width: 1025px) {
     
     a, p {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     header {
@@ -162,7 +166,11 @@ footer {
 
     main section p {
         margin: 0;
-        padding: 0 2vw;
+        padding: 0 1rem;
+    }
+
+    main section h1 {
+        margin: -2rem 0rem 1rem 0rem;
     }
 
     main img {
@@ -194,9 +202,17 @@ footer {
         justify-content: center;
         gap: 10vw;
     }
+
+    a, p {
+        margin: 0;
+        padding: 0;
+
+        font-size: 1.2rem;
+    }
     
-    #menu_dropdown:hover #menu_dropdown_content {
-        margin-left: -3.5vw;
+    #menu_dropdown_content {
+        top: 3.3rem;
+        margin: 0rem 0rem 0rem -1.2rem;
     }
 
     address {
@@ -213,12 +229,11 @@ footer {
     }
 
     main section p {
-        margin: 0 5% 6% 0;
+        margin: 1rem;
     }
 
     main section h1 {
-        margin: 6% 0 2% 0;
-        padding-bottom: 0;
+        margin: 1rem;
     }
 
     main img {
@@ -228,6 +243,6 @@ footer {
     }
 
     footer a {
-        margin: 2% 0 2% 2%;
+        margin: 0.5rem;
     }
 }
