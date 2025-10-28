@@ -59,6 +59,7 @@
 
 h1 {
     color: var(--secondary-color);
+    margin: 3% 0;
     font-size: 3em;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
@@ -203,6 +204,7 @@ footer {
     }
 
     main {
+        height: fit-content;
         flex-direction: column;
     }
 
@@ -210,8 +212,12 @@ footer {
         order: 2;
     }
 
+    main section p {
+        margin: 0 5% 6% 0;
+    }
+
     main section h1 {
-        margin-bottom: 0;
+        margin: 6% 0 2% 0;
         padding-bottom: 0;
     }
 
@@ -219,5 +225,9 @@ footer {
         width: 100vw;
         height: auto;
         order: 1;
+    }
+
+    footer a {
+        margin: 2% 0 2% 2%;
     }
 }
