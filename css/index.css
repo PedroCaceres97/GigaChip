@@ -1,0 +1,75 @@
+@import "css/animations.css";
+
+main {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+main section p, main section h1 {
+  animation: 3s ease-in-out fadeInStatic;
+}
+
+main img {
+  animation: 1.5s fadeInRight;
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        flex-direction: row;
+    }
+
+    main section {
+        order: 1;
+    }
+
+    main img {
+        height: 90vh;
+        position: relative;
+        float: right;
+        order: 2;
+    }
+
+    main section h1 {
+        margin: -2rem 0rem 1rem 0rem;
+    }
+
+    main section p {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 769px ) and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    main section {
+        order: 2;
+    }
+
+    main img {
+        width: 100vw;
+        height: auto;
+        order: 1;
+    }
+
+    main section p {
+        margin: 1rem;
+    }
+
+    main section h1 {
+        margin: 1rem;
+    }
+}
