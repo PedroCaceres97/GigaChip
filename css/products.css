@@ -1,13 +1,7 @@
 @import "css/animations.css";
 
-main {
-    width: 100vw;
-    min-height: 90vh;
-    position: relative;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+address {
+    margin: 0rem 0.5rem 0rem 0rem;
 }
 
 main h1, main p {
@@ -15,21 +9,41 @@ main h1, main p {
     padding: 0;
 }
 
-.product {
-    flex-basis: 25%;
+main {
+    width: 100vw;
     height: fit-content;
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 2rem 0rem 1rem 0rem;
 }
 
-.product img {
-    width: 60%;
-    height: auto;
+.product .price {
+    color: rgb(0, 255, 0);
+}
+.product .stock {
+    color: rgb(149, 0, 255);
 }
 
 @media screen and (min-width: 1025px) {
+    .product {
+        flex-basis: 25%;
+    }
 
+    .product img {
+        width: 10vw;
+        height: 15vw;
+    }
 }
 
 @media screen and (min-width: 769px ) and (max-width: 1024px) {
@@ -37,5 +51,12 @@ main h1, main p {
 }
 
 @media screen and (max-width: 768px) {
+    .product {
+        flex-basis: 50%;
+    }
 
+    .product img {
+        width: 20vw;
+        height: 30vw;
+    }
 }
